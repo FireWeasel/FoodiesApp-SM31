@@ -16,6 +16,8 @@
 		F59659181F7BF2DE00D2EC78 /* FoodiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59659171F7BF2DE00D2EC78 /* FoodiesUITests.swift */; };
 		F59659261F7BFA5D00D2EC78 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59659251F7BFA5D00D2EC78 /* SecondViewController.swift */; };
 		F59659281F7BFA8300D2EC78 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59659271F7BFA8300D2EC78 /* MyTableViewController.swift */; };
+		F5F4B3171F7CF2A700097105 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B3161F7CF2A700097105 /* MyTabBarController.swift */; };
+		F5FBB8C11F851C2A007857F7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F59659191F7BF2DE00D2EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59659251F7BFA5D00D2EC78 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F59659271F7BFA8300D2EC78 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		F5F4B3161F7CF2A700097105 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				F59658F71F7BF2DE00D2EC78 /* AppDelegate.swift */,
 				F59658F91F7BF2DE00D2EC78 /* ViewController.swift */,
 				F59658FB1F7BF2DE00D2EC78 /* Main.storyboard */,
+				F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */,
+				F5F4B3161F7CF2A700097105 /* MyTabBarController.swift */,
 				F59659271F7BFA8300D2EC78 /* MyTableViewController.swift */,
 				F59659251F7BFA5D00D2EC78 /* SecondViewController.swift */,
 				F59658FE1F7BF2DE00D2EC78 /* Assets.xcassets */,
@@ -266,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59659261F7BFA5D00D2EC78 /* SecondViewController.swift in Sources */,
+				F5FBB8C11F851C2A007857F7 /* MenuViewController.swift in Sources */,
 				F59658FA1F7BF2DE00D2EC78 /* ViewController.swift in Sources */,
 				F59658F81F7BF2DE00D2EC78 /* AppDelegate.swift in Sources */,
 				F59659281F7BFA8300D2EC78 /* MyTableViewController.swift in Sources */,
+				F5F4B3171F7CF2A700097105 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +521,7 @@
 				F596591E1F7BF2DE00D2EC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F596591F1F7BF2DE00D2EC78 /* Build configuration list for PBXNativeTarget "FoodiesTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				F59659211F7BF2DE00D2EC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F59659221F7BF2DE00D2EC78 /* Build configuration list for PBXNativeTarget "FoodiesUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +539,7 @@
 				F59659241F7BF2DE00D2EC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
