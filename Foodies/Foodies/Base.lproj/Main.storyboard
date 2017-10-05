@@ -44,139 +44,61 @@
             </objects>
             <point key="canvasLocation" x="-767" y="-269"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="Hwk-zK-KUx">
-            <objects>
-                <viewController id="ai7-po-3hP" customClass="SecondViewController" customModule="Foodies" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aRa-3O-kBG"/>
-                        <viewControllerLayoutGuide type="bottom" id="tw5-SI-dFV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0PP-Y5-ycZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruc-ZJ-zgk">
-                                <rect key="frame" x="0.0" y="0.0" width="124" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="Hand-drawn-fruit-creative-vector-material">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cu-3W-z1U">
-                                <rect key="frame" x="247" y="0.0" width="128" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="meat-products-color-sketches-set-vintage-style-skewers-pork-ribs-chicken-wings-steaks-sausages-vector-illustration-64027439"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXM-bU-nUT">
-                                <rect key="frame" x="0.0" y="127" width="375" height="387"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="35"/>
-                                <state key="normal" backgroundImage="a25fea32da40e00fc2e8e1082dcf0278--illustration-vector-food-illustrations">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ed-jN-QwZ">
-                                <rect key="frame" x="0.0" y="513" width="150" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="huge.101.508587"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djj-JD-VAI">
-                                <rect key="frame" x="123" y="0.0" width="123" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hand-drawn-vegetables_23-2147496157"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-L8-kTh">
-                                <rect key="frame" x="148" y="513" width="227" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="60-drinks-icons02"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gJf-nD-aec"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QZy-We-lj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1713" y="880"/>
-        </scene>
         <!--Item 2-->
-        <scene sceneID="gCz-Td-4jR">
+        <scene sceneID="T9a-3f-3Mr">
             <objects>
-                <viewController id="VQg-ER-TT8" sceneMemberID="viewController">
+                <viewController id="smY-EN-GUW" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ghQ-W2-aqE"/>
-                        <viewControllerLayoutGuide type="bottom" id="mUa-LY-fru"/>
+                        <viewControllerLayoutGuide type="top" id="hqj-eK-RD0"/>
+                        <viewControllerLayoutGuide type="bottom" id="T85-YM-1GV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Teo-Ql-z73">
+                    <view key="view" contentMode="scaleToFill" id="JEH-L8-KQH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="3hI-2l-cQe"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="zHT-hC-Voy"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XIy-u0-5a5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4Q-6c-Ndb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3415.1999999999998" y="60.719640179910051"/>
+            <point key="canvasLocation" x="4116" y="95"/>
         </scene>
         <!--Item 1-->
-        <scene sceneID="ykx-46-Bvl">
+        <scene sceneID="rIH-DM-UDK">
             <objects>
-                <viewController id="EuN-Kx-0wa" customClass="MyTabBarController" customModule="Foodies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f2T-ub-tUE" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Akk-TO-Vfa"/>
-                        <viewControllerLayoutGuide type="bottom" id="OdK-CF-9tq"/>
+                        <viewControllerLayoutGuide type="top" id="wjJ-gI-CrQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Red-1V-Pvz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Qd-H6-B35">
+                    <view key="view" contentMode="scaleToFill" id="hYi-IT-6OX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="a25fea32da40e00fc2e8e1082dcf0278--illustration-vector-food-illustrations" translatesAutoresizingMaskIntoConstraints="NO" id="9T5-h4-CLP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZZ-MJ-Kco">
-                                <rect key="frame" x="144" y="247" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-gx-g9L">
-                                <rect key="frame" x="144" y="292" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-Hd-kqm">
-                                <rect key="frame" x="144" y="338" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-tq-e9I">
-                                <rect key="frame" x="144" y="391" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvB-W9-edq">
-                                <rect key="frame" x="144" y="442" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97606939077377319" green="0.95401006937026978" blue="0.89987248182296753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="ttx-9w-33Z"/>
-                    <connections>
-                        <outlet property="vegBtn" destination="EZZ-MJ-Kco" id="Yos-Ym-Ouj"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="3K7-lc-KL0"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jw1-dV-w2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwA-na-Js3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3415.1999999999998" y="-597.75112443778119"/>
+            <point key="canvasLocation" x="4116" y="-658"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z3K-th-Dgf">
+            <objects>
+                <tabBarController id="QS5-0E-3hN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="r1I-eW-txm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f2T-ub-tUE" kind="relationship" relationship="viewControllers" id="IzP-Cg-LRM"/>
+                        <segue destination="smY-EN-GUW" kind="relationship" relationship="viewControllers" id="clq-TS-M5O"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwF-2J-ch1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2098" y="-269"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="4qm-M0-0Ri">
@@ -193,12 +115,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzs-86-DqO">
                                 <rect key="frame" x="-144" y="64" width="144" height="603"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atd-Sh-yAH">
-                                        <rect key="frame" x="22" y="51" width="100" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Y7a-0V-99a"/>
-                                            <constraint firstAttribute="height" constant="30" id="qTl-4k-EzN"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atd-Sh-yAH">
+                                        <rect key="frame" x="22" y="137" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Grocery list">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -206,12 +126,42 @@
                                             <segue destination="8Du-FD-FlR" kind="show" id="qHO-oz-blB"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ1-1y-wcQ">
+                                        <rect key="frame" x="22" y="205" width="97" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Recipes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="QS5-0E-3hN" kind="show" id="Jha-ay-wnf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s11-UT-p8W">
+                                        <rect key="frame" x="16" y="286" width="112" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="Ap8-Am-Qe6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Restaurants">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="MnK-QS-9dW" kind="show" id="L5u-N5-DRx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92739498615264893" green="0.78742635250091553" blue="0.62155407667160034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Atd-Sh-yAH" firstAttribute="top" secondItem="vzs-86-DqO" secondAttribute="top" constant="100" id="0A9-0p-6Ih"/>
+                                    <constraint firstItem="rJ1-1y-wcQ" firstAttribute="leading" secondItem="vzs-86-DqO" secondAttribute="leading" constant="38" id="20Q-bT-IG3"/>
                                     <constraint firstItem="Atd-Sh-yAH" firstAttribute="leading" secondItem="vzs-86-DqO" secondAttribute="leading" constant="8" id="B7N-Pz-7Pz"/>
+                                    <constraint firstItem="s11-UT-p8W" firstAttribute="top" secondItem="rJ1-1y-wcQ" secondAttribute="bottom" constant="144" id="Opc-CL-dXR"/>
+                                    <constraint firstItem="rJ1-1y-wcQ" firstAttribute="top" secondItem="Atd-Sh-yAH" secondAttribute="bottom" constant="120" id="a1U-ul-Mtl"/>
                                     <constraint firstAttribute="trailing" secondItem="Atd-Sh-yAH" secondAttribute="trailing" constant="8" id="axI-k2-eBF"/>
+                                    <constraint firstItem="s11-UT-p8W" firstAttribute="leading" secondItem="vzs-86-DqO" secondAttribute="leading" constant="16" id="bU2-Mn-Tlv"/>
+                                    <constraint firstAttribute="bottom" secondItem="s11-UT-p8W" secondAttribute="bottom" constant="126" id="eZT-Fo-HNO"/>
                                     <constraint firstItem="Atd-Sh-yAH" firstAttribute="top" secondItem="vzs-86-DqO" secondAttribute="top" constant="8" id="hiP-pn-QgM"/>
                                     <constraint firstAttribute="width" constant="144" id="rEB-0J-j0y"/>
                                 </constraints>
@@ -265,107 +215,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcc-sW-R0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-268"/>
+            <point key="canvasLocation" x="-14" y="543"/>
         </scene>
-        <!--My Tab Bar Controller-->
-        <scene sceneID="WWc-Bm-RoF">
+        <!--Second View Controller-->
+        <scene sceneID="cHJ-zz-RxP">
             <objects>
-                <tabBarController id="NlV-fe-WSN" customClass="MyTabBarController" customModule="Foodies" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Gz9-61-I7B">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="EuN-Kx-0wa" kind="relationship" relationship="viewControllers" id="f5X-fN-U4W"/>
-                        <segue destination="VQg-ER-TT8" kind="relationship" relationship="viewControllers" id="IHe-L9-zdy"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hFj-y8-fdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2660" y="-269"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Kh7-ZF-eBG">
-            <objects>
-                <viewController id="F9L-ee-Tya" sceneMemberID="viewController">
+                <viewController id="MnK-QS-9dW" customClass="SecondViewController" customModule="Foodies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0xP-ox-ExX"/>
-                        <viewControllerLayoutGuide type="bottom" id="0V2-aK-Zuc"/>
+                        <viewControllerLayoutGuide type="top" id="IR0-0Z-UeR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bsg-LU-Fa9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KoG-8I-KdD">
+                    <view key="view" contentMode="scaleToFill" id="q0P-92-VNX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="a25fea32da40e00fc2e8e1082dcf0278--illustration-vector-food-illustrations" translatesAutoresizingMaskIntoConstraints="NO" id="4CN-VM-oeK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3X-DV-TmT">
-                                <rect key="frame" x="144" y="245" width="86" height="30"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T8n-Pq-Fax">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amo-0b-zdl">
-                                <rect key="frame" x="144" y="336" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iN7-45-IJX">
-                                <rect key="frame" x="144" y="389" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-Yw-yuL">
-                                <rect key="frame" x="144" y="440" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYI-pR-uKO">
-                                <rect key="frame" x="144" y="290" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99513293079999998" blue="0.98471156309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            </mapView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97606939077377319" green="0.95401006937026978" blue="0.89987248182296753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7nM-jv-jWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SKj-9L-iye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="880"/>
-        </scene>
-        <!--My Table View Controller-->
-        <scene sceneID="XS8-8Q-8nw">
-            <objects>
-                <tableViewController id="c8V-s6-KJW" customClass="MyTableViewController" customModule="Foodies" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4RX-CM-xLy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RKI-9a-zMr">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RKI-9a-zMr" id="XAM-QU-Mh3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="c8V-s6-KJW" id="E6S-xP-pkK"/>
-                            <outlet property="delegate" destination="c8V-s6-KJW" id="La2-gy-gi6"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIX-vg-BZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="913" y="881"/>
+            <point key="canvasLocation" x="1672.8" y="868.51574212893559"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OMJ-hx-DuT">
@@ -388,12 +262,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="60-drinks-icons02" width="1160" height="772"/>
-        <image name="Hand-drawn-fruit-creative-vector-material" width="500" height="468"/>
-        <image name="a25fea32da40e00fc2e8e1082dcf0278--illustration-vector-food-illustrations" width="736" height="885"/>
         <image name="foodieLogo" width="550" height="260"/>
-        <image name="hand-drawn-vegetables_23-2147496157" width="626" height="626"/>
-        <image name="huge.101.508587" width="450" height="421"/>
-        <image name="meat-products-color-sketches-set-vintage-style-skewers-pork-ribs-chicken-wings-steaks-sausages-vector-illustration-64027439" width="800" height="800"/>
     </resources>
 </document>

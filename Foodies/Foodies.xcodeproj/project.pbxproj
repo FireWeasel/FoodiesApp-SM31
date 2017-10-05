@@ -18,6 +18,7 @@
 		F59659281F7BFA8300D2EC78 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59659271F7BFA8300D2EC78 /* MyTableViewController.swift */; };
 		F5F4B3171F7CF2A700097105 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4B3161F7CF2A700097105 /* MyTabBarController.swift */; };
 		F5FBB8C11F851C2A007857F7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */; };
+		F5FBB8C41F865086007857F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FBB8C31F865086007857F7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F59659271F7BFA8300D2EC78 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		F5F4B3161F7CF2A700097105 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F5FBB8C31F865086007857F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FBB8C41F865086007857F7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 				F596590B1F7BF2DE00D2EC78 /* FoodiesTests */,
 				F59659161F7BF2DE00D2EC78 /* FoodiesUITests */,
 				F59658F51F7BF2DE00D2EC78 /* Products */,
+				F5FBB8C21F865086007857F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,14 @@
 				F59659191F7BF2DE00D2EC78 /* Info.plist */,
 			);
 			path = FoodiesUITests;
+			sourceTree = "<group>";
+		};
+		F5FBB8C21F865086007857F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5FBB8C31F865086007857F7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

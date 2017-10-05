@@ -13,7 +13,7 @@ class MyTabBarController: UITabBarController {
     @IBOutlet weak var vegBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        vegBtn.layer.cornerRadius = 4
+        //vegBtn.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
 
