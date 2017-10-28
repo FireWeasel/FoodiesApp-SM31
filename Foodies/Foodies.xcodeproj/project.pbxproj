@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		74189DBA8A706107E71B1EFA /* Pods_FoodiesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7094C2B2D0C95475E28C7F6A /* Pods_FoodiesUITests.framework */; };
+		F52876261FA4AFDC00896388 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52876251FA4AFDC00896388 /* MapViewController.swift */; };
+		F528762A1FA4B43E00896388 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52876291FA4B43E00896388 /* LocationSearchTable.swift */; };
 		F5653CB81FA1EF4000336F0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5653CB71FA1EF4000336F0E /* GoogleService-Info.plist */; };
 		F5653CBA1FA1F6D800336F0E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5653CB91FA1F6D800336F0E /* PopUpViewController.swift */; };
 		F5653CBC1FA1FD2300336F0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */; };
@@ -55,6 +57,8 @@
 		55D5CA7DC799B876DF64186D /* Pods-FoodiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodiesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodiesTests/Pods-FoodiesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7094C2B2D0C95475E28C7F6A /* Pods_FoodiesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodiesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		739C2A5B67C5EB34D7DAD0A9 /* Pods-FoodiesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodiesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodiesUITests/Pods-FoodiesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F52876251FA4AFDC00896388 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F52876291FA4B43E00896388 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		F5653CB71FA1EF4000336F0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5653CB91FA1F6D800336F0E /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				F59658F71F7BF2DE00D2EC78 /* AppDelegate.swift */,
 				F59658F91F7BF2DE00D2EC78 /* ViewController.swift */,
 				F59658FB1F7BF2DE00D2EC78 /* Main.storyboard */,
+				F52876251FA4AFDC00896388 /* MapViewController.swift */,
+				F52876291FA4B43E00896388 /* LocationSearchTable.swift */,
 				F5653CB91FA1F6D800336F0E /* PopUpViewController.swift */,
 				F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */,
 				F5E621EA1F8F63D1007EE0B4 /* ProductCell.swift */,
@@ -425,11 +431,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Foodies/Pods-Foodies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -496,7 +504,9 @@
 				F5653CBC1FA1FD2300336F0E /* LoginViewController.swift in Sources */,
 				F59659261F7BFA5D00D2EC78 /* SecondViewController.swift in Sources */,
 				F5FBB8C11F851C2A007857F7 /* MenuViewController.swift in Sources */,
+				F52876261FA4AFDC00896388 /* MapViewController.swift in Sources */,
 				F59658FA1F7BF2DE00D2EC78 /* ViewController.swift in Sources */,
+				F528762A1FA4B43E00896388 /* LocationSearchTable.swift in Sources */,
 				F5E621E91F8F6317007EE0B4 /* GLViewController.swift in Sources */,
 				F59658F81F7BF2DE00D2EC78 /* AppDelegate.swift in Sources */,
 				F5E621EB1F8F63D1007EE0B4 /* ProductCell.swift in Sources */,

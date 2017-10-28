@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00103D6C821BE85971C563025527BA5D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4451DC1B47A447819267C4E0ECAF9B1F</key>
+		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>65E962590593F22574F221562A7DA94D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9A57C61195563BB850937C05445A36F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
