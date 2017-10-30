@@ -7,46 +7,26 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var handle: AuthStateDidChangeListenerHandle?
+    var ref: DatabaseReference!
+    var refHandle:UInt!
+    var meats = [Meat]()
+    
     @IBOutlet weak var tableViewProduct: UITableView!
-    //var fruits = [Fruit]()
     var index:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
+        getMeats()
         tableViewProduct.delegate = self
         tableViewProduct.dataSource = self
-        
-        //test on getting json data
-        guard let path = Bundle.main.path(forResource: "Products", ofType: "json") else {return}
-        let url = URL(fileURLWithPath: path)
-        
-        
-        do{
-            let data = try Data(contentsOf: url)
-            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-            //testing printing data
-            print(json)
-            
-            guard let array = json as? [Any] else {return}
-            
-            for fruit in array {
-                guard let userDict = fruit as? [String: Any] else {return}
-                guard let userId = userDict["id"] as? Int else {print("not an int"); return}
-                guard let name = userDict["name"] as? String else {return}
-                guard let price = userDict["price"] as? Double else {print("not an Double"); return}
-                
-                print(userId)
-                print(name)
-                print(price)
-        }
-            }catch {
-                print(error)
-        }
-        
-        //force unwraping since we know the file will work
         
     }
 
@@ -57,17 +37,30 @@ class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
 
     //MARK: TableView Delegate method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 25
+        return meats.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for:indexPath) as! ProductCell
-        
-        
+        cell.nameLabel?.text = meats[indexPath.row].name
         return cell
     }
     
+    func getMeats()
+    {
+        refHandle = ref.child("meat").observe(.childAdded, with: { (snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                let meat = Meat()
+                meat.setValuesForKeys(dictionary)
+                self.meats.append(meat)
+                DispatchQueue.main.async {
+                    self.tableViewProduct.reloadData()
+                }
+            }
+        })
+    }
     
     @IBAction func buttonHandlerAddToCart(_ sender: UIButton) {
         
@@ -99,17 +92,20 @@ class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
                 tempView.animationZoom(scaleX: 0.2, y: 0.2)
                 tempView.animationRoted(angle: CGFloat(Double.pi))
                 
+                
             }, completion: { _ in
                 
                 tempView.removeFromSuperview()
                 
-                /* UIView.animate(withDuration: 1.0, animations: {
-                 
-                 })*/
-                
             })
             
         })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+        }
     }
 }
 extension UIView{

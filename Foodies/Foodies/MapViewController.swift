@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseAuth
 
 protocol HandleMapSearch: class {
     func dropPinZoomIn(_ placemark:MKPlacemark)
@@ -15,9 +16,11 @@ protocol HandleMapSearch: class {
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
+    var handle: AuthStateDidChangeListenerHandle?
     let locationManager = CLLocationManager()
     var selectedPin: MKPlacemark?
     var resultSearchController: UISearchController!
+    
     
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
@@ -27,6 +30,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        
+        
         
         //locationManager.startUpdatingLocation()
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
@@ -65,6 +70,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error:: \(error)")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+        print("user is signed in")
+        }
     }
 }
 

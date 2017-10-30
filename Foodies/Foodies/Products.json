@@ -1,11 +1,11 @@
 {
-  "fruits": [
+  "fruit": [
     { "id": 1, "name": "apple", "price": 2.5},
     {"id": 2, "name": "peach", "price": 1},
     {"id": 3, "name": "pear", "price": 1.5},
     {"id": 4, "name": "banana","price": 0.5}
   ],
-  "vegetables": [
+  "vegetable": [
     { "id": 1, "name": "tomato", "price": 2.5 },
     {"id": 2, "name" : "cucumber", "price": 0.7},
     {"id": 3, "name": "carrot", "price": 3}
@@ -13,5 +13,12 @@
   "meat": [
     {"id": 1, "name": "chicken", "price": 4.5},
     {"id": 2, "name": "beef", "price": 5}
+  ],
+  "recipe": [
+    {"id":1, "name": "Chicken curry", "ingredient":
+      [{"name":"chicken"},
+         {"name":"curry"},
+         {"name": "cream"}
+        ], "timeToPrepare": 20, "description":"bla bla bla", "favorite": true}
   ]
 }

@@ -7,6 +7,10 @@ target 'Foodies' do
 
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Messaging'
+pod 'Firebase/Crash'
+pod 'FacebookLogin'
 
   # Pods for Foodies
 
