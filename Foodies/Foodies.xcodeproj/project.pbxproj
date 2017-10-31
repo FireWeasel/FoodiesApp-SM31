@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74189DBA8A706107E71B1EFA /* Pods_FoodiesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7094C2B2D0C95475E28C7F6A /* Pods_FoodiesUITests.framework */; };
+		F50D2D9B1FA8B44000292F92 /* UpdateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50D2D9A1FA8B44000292F92 /* UpdateRecipeViewController.swift */; };
 		F52876261FA4AFDC00896388 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52876251FA4AFDC00896388 /* MapViewController.swift */; };
 		F528762A1FA4B43E00896388 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52876291FA4B43E00896388 /* LocationSearchTable.swift */; };
 		F53AEEBD1FA7769400906918 /* FruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEEBC1FA7769400906918 /* FruitViewController.swift */; };
@@ -15,6 +16,9 @@
 		F53AEEC11FA776FF00906918 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEEC01FA776FF00906918 /* OtherViewController.swift */; };
 		F53AEEC31FA7839400906918 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEEC21FA7839400906918 /* RecipeCell.swift */; };
 		F53AEEC91FA7A51B00906918 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEEC81FA7A51B00906918 /* ListTableViewController.swift */; };
+		F53AEECB1FA88AF000906918 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEECA1FA88AF000906918 /* RecipeViewController.swift */; };
+		F53AEECD1FA8A32300906918 /* LIstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEECC1FA8A32200906918 /* LIstCell.swift */; };
+		F53AEECF1FA8ADCF00906918 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AEECE1FA8ADCF00906918 /* AddRecipeViewController.swift */; };
 		F5653CB81FA1EF4000336F0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5653CB71FA1EF4000336F0E /* GoogleService-Info.plist */; };
 		F5653CBA1FA1F6D800336F0E /* LogInPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5653CB91FA1F6D800336F0E /* LogInPopUpViewController.swift */; };
 		F5653CBC1FA1FD2300336F0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */; };
@@ -25,6 +29,11 @@
 		F59659021F7BF2DE00D2EC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59659001F7BF2DE00D2EC78 /* LaunchScreen.storyboard */; };
 		F596590D1F7BF2DE00D2EC78 /* FoodiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F596590C1F7BF2DE00D2EC78 /* FoodiesTests.swift */; };
 		F59659181F7BF2DE00D2EC78 /* FoodiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59659171F7BF2DE00D2EC78 /* FoodiesUITests.swift */; };
+		F5D2F5CA1FA8BB8B009BF281 /* AddFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F5C91FA8BB8B009BF281 /* AddFruitViewController.swift */; };
+		F5D2F5CC1FA8BBAD009BF281 /* AddVegetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F5CB1FA8BBAD009BF281 /* AddVegetableViewController.swift */; };
+		F5D2F5CE1FA8BBC8009BF281 /* AddMeatFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F5CD1FA8BBC8009BF281 /* AddMeatFishViewController.swift */; };
+		F5D2F5D01FA8BBEE009BF281 /* AddOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F5CF1FA8BBEE009BF281 /* AddOtherViewController.swift */; };
+		F5D2F5D21FA8BCF7009BF281 /* UpdateMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2F5D11FA8BCF7009BF281 /* UpdateMenuViewController.swift */; };
 		F5E29AFE1FA650C0005A2F38 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E29AFD1FA650C0005A2F38 /* RecipeTableViewController.swift */; };
 		F5E29B001FA666CD005A2F38 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E29AFF1FA666CD005A2F38 /* Classes.swift */; };
 		F5E29B041FA66D73005A2F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E29B031FA66D73005A2F38 /* Assets.xcassets */; };
@@ -62,6 +71,7 @@
 		55D5CA7DC799B876DF64186D /* Pods-FoodiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodiesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodiesTests/Pods-FoodiesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7094C2B2D0C95475E28C7F6A /* Pods_FoodiesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodiesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		739C2A5B67C5EB34D7DAD0A9 /* Pods-FoodiesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodiesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodiesUITests/Pods-FoodiesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F50D2D9A1FA8B44000292F92 /* UpdateRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRecipeViewController.swift; sourceTree = "<group>"; };
 		F52876251FA4AFDC00896388 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F52876291FA4B43E00896388 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		F53AEEBC1FA7769400906918 /* FruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +79,9 @@
 		F53AEEC01FA776FF00906918 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		F53AEEC21FA7839400906918 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		F53AEEC81FA7A51B00906918 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		F53AEECA1FA88AF000906918 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		F53AEECC1FA8A32200906918 /* LIstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIstCell.swift; sourceTree = "<group>"; };
+		F53AEECE1FA8ADCF00906918 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		F5653CB71FA1EF4000336F0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5653CB91FA1F6D800336F0E /* LogInPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInPopUpViewController.swift; sourceTree = "<group>"; };
 		F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +98,11 @@
 		F59659131F7BF2DE00D2EC78 /* FoodiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59659171F7BF2DE00D2EC78 /* FoodiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodiesUITests.swift; sourceTree = "<group>"; };
 		F59659191F7BF2DE00D2EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D2F5C91FA8BB8B009BF281 /* AddFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFruitViewController.swift; sourceTree = "<group>"; };
+		F5D2F5CB1FA8BBAD009BF281 /* AddVegetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVegetableViewController.swift; sourceTree = "<group>"; };
+		F5D2F5CD1FA8BBC8009BF281 /* AddMeatFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeatFishViewController.swift; sourceTree = "<group>"; };
+		F5D2F5CF1FA8BBEE009BF281 /* AddOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOtherViewController.swift; sourceTree = "<group>"; };
+		F5D2F5D11FA8BCF7009BF281 /* UpdateMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMenuViewController.swift; sourceTree = "<group>"; };
 		F5E29AFC1FA630A3005A2F38 /* Foodies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Foodies.entitlements; sourceTree = "<group>"; };
 		F5E29AFD1FA650C0005A2F38 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 		F5E29AFF1FA666CD005A2F38 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
@@ -163,25 +181,18 @@
 		F59658F61F7BF2DE00D2EC78 /* Foodies */ = {
 			isa = PBXGroup;
 			children = (
+				F5D2F5DB1FA8C26D009BF281 /* MainClasses */,
+				F5D2F5DA1FA8C24A009BF281 /* ModeratorClasses */,
+				F5D2F5D91FA8C233009BF281 /* MapClasses */,
+				F5D2F5D81FA8C211009BF281 /* RegisterLoginClasses */,
+				F5D2F5D71FA8C1EF009BF281 /* RecipeClasses */,
+				F5D2F5D61FA8C1DB009BF281 /* OtherIngClasses */,
+				F5D2F5D51FA8C1C5009BF281 /* MeatFishClasses */,
+				F5D2F5D41FA8C158009BF281 /* VegetablesClasses */,
+				F5D2F5D31FA8C0F5009BF281 /* FruitClasses */,
 				F5E29AFC1FA630A3005A2F38 /* Foodies.entitlements */,
 				F59658F71F7BF2DE00D2EC78 /* AppDelegate.swift */,
-				F59658F91F7BF2DE00D2EC78 /* ViewController.swift */,
 				F59658FB1F7BF2DE00D2EC78 /* Main.storyboard */,
-				F53AEEC01FA776FF00906918 /* OtherViewController.swift */,
-				F53AEEBE1FA776C300906918 /* VegetableViewController.swift */,
-				F53AEEBC1FA7769400906918 /* FruitViewController.swift */,
-				F53AEEC81FA7A51B00906918 /* ListTableViewController.swift */,
-				F5E29AFD1FA650C0005A2F38 /* RecipeTableViewController.swift */,
-				F52876251FA4AFDC00896388 /* MapViewController.swift */,
-				F52876291FA4B43E00896388 /* LocationSearchTable.swift */,
-				F5653CB91FA1F6D800336F0E /* LogInPopUpViewController.swift */,
-				F57140861FA60D2B0051DA48 /* RegisterPopUpViewController.swift */,
-				F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */,
-				F5E621EA1F8F63D1007EE0B4 /* ProductCell.swift */,
-				F53AEEC21FA7839400906918 /* RecipeCell.swift */,
-				F5E29AFF1FA666CD005A2F38 /* Classes.swift */,
-				F5E621E81F8F6317007EE0B4 /* GLViewController.swift */,
-				F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */,
 				F59659001F7BF2DE00D2EC78 /* LaunchScreen.storyboard */,
 				F59659031F7BF2DE00D2EC78 /* Info.plist */,
 				F5653CB71FA1EF4000336F0E /* GoogleService-Info.plist */,
@@ -206,6 +217,94 @@
 				F59659191F7BF2DE00D2EC78 /* Info.plist */,
 			);
 			path = FoodiesUITests;
+			sourceTree = "<group>";
+		};
+		F5D2F5D31FA8C0F5009BF281 /* FruitClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2F5C91FA8BB8B009BF281 /* AddFruitViewController.swift */,
+				F53AEEBC1FA7769400906918 /* FruitViewController.swift */,
+			);
+			path = FruitClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5D41FA8C158009BF281 /* VegetablesClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2F5CB1FA8BBAD009BF281 /* AddVegetableViewController.swift */,
+				F53AEEBE1FA776C300906918 /* VegetableViewController.swift */,
+			);
+			path = VegetablesClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5D51FA8C1C5009BF281 /* MeatFishClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2F5CD1FA8BBC8009BF281 /* AddMeatFishViewController.swift */,
+				F5E621E81F8F6317007EE0B4 /* GLViewController.swift */,
+			);
+			path = MeatFishClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5D61FA8C1DB009BF281 /* OtherIngClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F53AEEC01FA776FF00906918 /* OtherViewController.swift */,
+				F5D2F5CF1FA8BBEE009BF281 /* AddOtherViewController.swift */,
+			);
+			path = OtherIngClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5D71FA8C1EF009BF281 /* RecipeClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F53AEECA1FA88AF000906918 /* RecipeViewController.swift */,
+				F5E29AFD1FA650C0005A2F38 /* RecipeTableViewController.swift */,
+				F50D2D9A1FA8B44000292F92 /* UpdateRecipeViewController.swift */,
+				F53AEECE1FA8ADCF00906918 /* AddRecipeViewController.swift */,
+			);
+			path = RecipeClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5D81FA8C211009BF281 /* RegisterLoginClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5653CBB1FA1FD2300336F0E /* LoginViewController.swift */,
+				F57140861FA60D2B0051DA48 /* RegisterPopUpViewController.swift */,
+				F5653CB91FA1F6D800336F0E /* LogInPopUpViewController.swift */,
+			);
+			path = RegisterLoginClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5D91FA8C233009BF281 /* MapClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F52876291FA4B43E00896388 /* LocationSearchTable.swift */,
+				F52876251FA4AFDC00896388 /* MapViewController.swift */,
+			);
+			path = MapClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5DA1FA8C24A009BF281 /* ModeratorClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2F5D11FA8BCF7009BF281 /* UpdateMenuViewController.swift */,
+				F5E621EA1F8F63D1007EE0B4 /* ProductCell.swift */,
+				F53AEECC1FA8A32200906918 /* LIstCell.swift */,
+				F53AEEC21FA7839400906918 /* RecipeCell.swift */,
+				F5E29AFF1FA666CD005A2F38 /* Classes.swift */,
+			);
+			path = ModeratorClasses;
+			sourceTree = "<group>";
+		};
+		F5D2F5DB1FA8C26D009BF281 /* MainClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F59658F91F7BF2DE00D2EC78 /* ViewController.swift */,
+				F53AEEC81FA7A51B00906918 /* ListTableViewController.swift */,
+				F5FBB8C01F851C2A007857F7 /* MenuViewController.swift */,
+			);
+			path = MainClasses;
 			sourceTree = "<group>";
 		};
 		F5FBB8C21F865086007857F7 /* Frameworks */ = {
@@ -537,19 +636,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53AEECD1FA8A32300906918 /* LIstCell.swift in Sources */,
 				F5653CBC1FA1FD2300336F0E /* LoginViewController.swift in Sources */,
 				F57140871FA60D2B0051DA48 /* RegisterPopUpViewController.swift in Sources */,
 				F5E29AFE1FA650C0005A2F38 /* RecipeTableViewController.swift in Sources */,
+				F5D2F5D21FA8BCF7009BF281 /* UpdateMenuViewController.swift in Sources */,
+				F5D2F5D01FA8BBEE009BF281 /* AddOtherViewController.swift in Sources */,
 				F53AEEC31FA7839400906918 /* RecipeCell.swift in Sources */,
+				F50D2D9B1FA8B44000292F92 /* UpdateRecipeViewController.swift in Sources */,
 				F5FBB8C11F851C2A007857F7 /* MenuViewController.swift in Sources */,
 				F53AEEC11FA776FF00906918 /* OtherViewController.swift in Sources */,
 				F52876261FA4AFDC00896388 /* MapViewController.swift in Sources */,
+				F5D2F5CA1FA8BB8B009BF281 /* AddFruitViewController.swift in Sources */,
 				F59658FA1F7BF2DE00D2EC78 /* ViewController.swift in Sources */,
+				F53AEECB1FA88AF000906918 /* RecipeViewController.swift in Sources */,
 				F528762A1FA4B43E00896388 /* LocationSearchTable.swift in Sources */,
+				F5D2F5CC1FA8BBAD009BF281 /* AddVegetableViewController.swift in Sources */,
 				F53AEEBD1FA7769400906918 /* FruitViewController.swift in Sources */,
+				F53AEECF1FA8ADCF00906918 /* AddRecipeViewController.swift in Sources */,
 				F5E621E91F8F6317007EE0B4 /* GLViewController.swift in Sources */,
 				F5E29B001FA666CD005A2F38 /* Classes.swift in Sources */,
 				F53AEEBF1FA776C300906918 /* VegetableViewController.swift in Sources */,
+				F5D2F5CE1FA8BBC8009BF281 /* AddMeatFishViewController.swift in Sources */,
 				F59658F81F7BF2DE00D2EC78 /* AppDelegate.swift in Sources */,
 				F53AEEC91FA7A51B00906918 /* ListTableViewController.swift in Sources */,
 				F5E621EB1F8F63D1007EE0B4 /* ProductCell.swift in Sources */,
