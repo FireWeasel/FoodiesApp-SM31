@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class RegisterPopUpViewController: UIViewController {
+class RegisterPopUpViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var emailTb: UITextField!
     @IBOutlet weak var passwordTb: UITextField!
@@ -22,12 +22,22 @@ class RegisterPopUpViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.emailTb.delegate = self
+        self.passwordTb.delegate = self
     }
     
     
     @IBAction func closeBtn(_ sender: Any) {
         self.view.removeFromSuperview()
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if (string == "\n") {
+            emailTb.resignFirstResponder()
+            passwordTb.resignFirstResponder()
+            return false
+        }
+        return true
     }
     
     @IBAction func registerUser(_ sender: Any) {

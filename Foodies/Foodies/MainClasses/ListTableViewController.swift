@@ -18,14 +18,21 @@ class ListTableViewController: UITableViewController {
     var index:Int = 0
     var lists = [List]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //refreshControl = UIRefreshControl()
+        //refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        //refreshControl?.addTarget(self, action: "refresh:", for: UIControlEvents.valueChanged)
+        //self.tableView?.addSubview(refreshControl!)
         ref = Database.database().reference()
         getList()
     }
 
+    /*func refresh(sender:UIRefreshControl)
+    {
+        refreshControl!.addTarget(self, action: "getList", for: UIControlEvents.valueChanged)
+    }*/
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,13 +67,6 @@ class ListTableViewController: UITableViewController {
         sender.isSelected = !sender.isSelected
         
     }
-    /*override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if (editingStyle == UITableViewCellEditingStyle.delete) {
-        let cell = tableView.cellForRow(at: indexPath) as! ProductCell
-        ref.child("list").child(cell.textLabel!.text!).removeValue()
-        
-    }
-}*/
 
     func getList()
     {
@@ -75,6 +75,12 @@ class ListTableViewController: UITableViewController {
                 let list = List()
                 list.setValuesForKeys(dictionary)
                 self.lists.append(list)
+                
+               // if (self.refreshControl?.isRefreshing)!
+                //{
+                 //   self.refreshControl?.endRefreshing()
+                //}
+                
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }

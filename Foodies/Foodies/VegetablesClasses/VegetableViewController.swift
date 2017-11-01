@@ -26,6 +26,7 @@ class VegetableViewController: UIViewController,UITableViewDelegate, UITableView
         getVegetables()
         tableViewProduct.delegate = self
         tableViewProduct.dataSource = self
+        self.hideKeyboardWhenTappedAround()
         
     }
     
@@ -61,11 +62,12 @@ class VegetableViewController: UIViewController,UITableViewDelegate, UITableView
         let list =
             [
                 "name": cell.nameLabel?.text,
-                "quantity": cell.quantTB?.text
+                "quantity": cell.quantityLb!.text
         ]
         
+        print(list)
         self.ref.child("list").child(cell.nameLabel!.text!).setValue(list)
-        cell.quantTB?.text = ""
+        cell.quantityLb?.text = ""
     }
     
     override func didReceiveMemoryWarning() {
@@ -78,13 +80,26 @@ class VegetableViewController: UIViewController,UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 76.0
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for:indexPath) as! ProductCell
         cell.nameLabel?.text = vegetables[indexPath.row].name
+        let vegetable = vegetables[indexPath.row]
+        if let vegetableImageUrl = vegetable.imageItem {
+            let url = URL(string: vegetableImageUrl)
+            URLSession.shared.dataTask(with: url!, completionHandler: { (data,response ,error ) in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                DispatchQueue.main.async {
+                    cell.imageViewProduct?.image = UIImage(data: data!)
+                }
+            }).resume()
+        }
         return cell
     }
     

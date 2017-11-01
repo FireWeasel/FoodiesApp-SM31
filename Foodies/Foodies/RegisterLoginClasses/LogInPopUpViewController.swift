@@ -10,16 +10,26 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class LogInPopUpViewController: UIViewController {
+class LogInPopUpViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var passTb: UITextField!
     @IBOutlet weak var emailTb: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.emailTb.delegate = self
+        self.passTb.delegate = self
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
     }
 
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if (string == "\n") {
+            emailTb.resignFirstResponder()
+            passTb.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

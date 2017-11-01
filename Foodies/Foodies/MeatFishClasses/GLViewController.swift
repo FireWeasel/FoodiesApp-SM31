@@ -28,6 +28,7 @@ class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableViewProduct.delegate = self
         tableViewProduct.dataSource = self
         self.tableViewProduct.estimatedRowHeight = 100
+        self.hideKeyboardWhenTappedAround()
         
     }
 
@@ -36,7 +37,7 @@ class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 76.0
+        return 100
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,6 +49,19 @@ class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for:indexPath) as! ProductCell
         cell.nameLabel?.text = meats[indexPath.row].name
+        let meat = meats[indexPath.row]
+        if let meatImageUrl = meat.imageItem {
+            let url = URL(string: meatImageUrl)
+            URLSession.shared.dataTask(with: url!, completionHandler: { (data,response ,error ) in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                DispatchQueue.main.async {
+                    cell.imageViewProduct?.image = UIImage(data: data!)
+                }
+            }).resume()
+        }
         return cell
     }
     
@@ -84,11 +98,11 @@ class GLViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         let list =
             [
                 "name": cell.nameLabel?.text,
-                "quantity": cell.quantTB?.text
+                "quantity": cell.quantityLb!.text
         ]
         
         self.ref.child("list").child(cell.nameLabel!.text!).setValue(list)
-        cell.quantTB?.text = ""
+        cell.quantityLb?.text = ""
         
     }
     

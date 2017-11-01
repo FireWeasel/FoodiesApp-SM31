@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class LocationSearchTable: UITableViewController {
-
+    
     weak var handleMapSearchDelegate: HandleMapSearch?
     var matchingItems: [MKMapItem] = []
     var mapView: MKMapView?

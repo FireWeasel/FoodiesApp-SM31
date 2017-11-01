@@ -75,10 +75,11 @@ class RecipeTableViewController: UITableViewController {
                 let controller = segue.destination as! RecipeViewController
                 let value = recipes[indexPath.row]
                 let cell = tableView.cellForRow(at: indexPath) as! RecipeCell
-                controller.name = cell.nameLabel?.text
+                controller.name = cell.nameLabel!.text
                 controller.ttP = cell.ttPLabel?.text
                 controller.ingredients = value.ingredient
                 controller.tips = value.tips
+                controller.imageForRecipe = value.imageItem
             }
         }
     }

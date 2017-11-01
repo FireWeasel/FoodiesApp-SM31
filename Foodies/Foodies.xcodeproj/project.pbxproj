@@ -291,8 +291,8 @@
 				F5D2F5D11FA8BCF7009BF281 /* UpdateMenuViewController.swift */,
 				F5E621EA1F8F63D1007EE0B4 /* ProductCell.swift */,
 				F53AEECC1FA8A32200906918 /* LIstCell.swift */,
-				F53AEEC21FA7839400906918 /* RecipeCell.swift */,
 				F5E29AFF1FA666CD005A2F38 /* Classes.swift */,
+				F53AEEC21FA7839400906918 /* RecipeCell.swift */,
 			);
 			path = ModeratorClasses;
 			sourceTree = "<group>";

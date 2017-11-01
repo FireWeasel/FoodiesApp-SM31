@@ -9,14 +9,17 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 
 class FruitViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     var handle: AuthStateDidChangeListenerHandle?
     var ref: DatabaseReference!
+    //var storage:Storage!
     var refHandle:UInt!
     @IBOutlet weak var tableViewProduct: UITableView!
     var index:Int = 0
     var fruits = [Fruit]()
+    var picArray = [UIImage]()
     
     
     override func viewDidLoad() {
@@ -25,19 +28,23 @@ class FruitViewController: UIViewController,UITableViewDelegate, UITableViewData
         getFruits()
         tableViewProduct.delegate = self
         tableViewProduct.dataSource = self
-        
+        self.hideKeyboardWhenTappedAround()
+        //self.storage = Storage().storage
     }
     
     func getFruits(){
+        
         refHandle = ref.child("fruit").observe(.childAdded, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let fruit = Fruit()
                 fruit.setValuesForKeys(dictionary)
+                
                 self.fruits.append(fruit)
                 DispatchQueue.main.async {
                     self.tableViewProduct.reloadData()
                 }
             }
+            
         })
     }
     @IBAction func buttonHandlerAddToCart(_ sender: UIButton) {
@@ -59,15 +66,15 @@ class FruitViewController: UIViewController,UITableViewDelegate, UITableViewData
         
         let list =
             [
-                "name": cell.nameLabel?.text,
-                "quantity": cell.quantTB?.text
+                "name": cell.nameLabel!.text,
+                "quantity": cell.quantityLb!.text
         ]
         
         self.ref.child("list").child(cell.nameLabel!.text!).setValue(list)
-        cell.quantTB?.text = ""
+        cell.quantityLb?.text = ""
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 76.0
+        return 100
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,6 +90,19 @@ class FruitViewController: UIViewController,UITableViewDelegate, UITableViewData
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for:indexPath) as! ProductCell
         cell.nameLabel?.text = fruits[indexPath.row].name
+        let fruit = fruits[indexPath.row]
+        if let fruitImageURL = fruit.imageItem {
+            let url = URL(string: fruitImageURL)
+            URLSession.shared.dataTask(with: url!, completionHandler: { (data,response ,error ) in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                DispatchQueue.main.async {
+                    cell.imageViewProduct?.image = UIImage(data: data!)
+                }
+            }).resume()
+        }
         return cell
     }
     
@@ -108,7 +128,7 @@ class FruitViewController: UIViewController,UITableViewDelegate, UITableViewData
         })
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+        override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             
         }

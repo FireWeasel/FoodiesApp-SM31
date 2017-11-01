@@ -61,15 +61,15 @@ class OtherViewController: UIViewController,UITableViewDelegate, UITableViewData
         let list =
             [
                 "name": cell.nameLabel?.text,
-                "quantity": cell.quantTB?.text
+                "quantity": cell.quantityLb!.text
         ]
         
         self.ref.child("list").child(cell.nameLabel!.text!).setValue(list)
-        cell.quantTB?.text = ""
+        cell.quantityLb?.text = ""
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 76.0
+        return 100
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -84,6 +84,19 @@ class OtherViewController: UIViewController,UITableViewDelegate, UITableViewData
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for:indexPath) as! ProductCell
         cell.nameLabel?.text = others[indexPath.row].name
+        let other = others[indexPath.row]
+        if let otherImageUrl = other.imageItem {
+            let url = URL(string: otherImageUrl)
+            URLSession.shared.dataTask(with: url!, completionHandler: { (data,response ,error ) in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                DispatchQueue.main.async {
+                    cell.imageViewProduct?.image = UIImage(data: data!)
+                }
+            }).resume()
+        }
         return cell
     }
     

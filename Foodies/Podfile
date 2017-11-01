@@ -11,6 +11,7 @@ pod 'Firebase/Database'
 pod 'Firebase/Messaging'
 pod 'Firebase/Crash'
 pod 'FacebookLogin'
+pod 'FirebaseStorage'
 
   # Pods for Foodies
 

@@ -42,6 +42,14 @@ class MenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func signOutBtn(_ sender: Any) {
+        try! Auth.auth().signOut()
+        if let storyboard = self.storyboard {
+            let vc = storyboard.instantiateViewController(withIdentifier: "firstViewController") as! ViewController
+            self.present(vc, animated: false, completion: nil)
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             // ...
