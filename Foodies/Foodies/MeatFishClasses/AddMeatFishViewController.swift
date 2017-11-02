@@ -56,7 +56,7 @@ class AddMeatFishViewController: UIViewController,UITextFieldDelegate, UIImagePi
             image = #imageLiteral(resourceName: "fruits-75a")
         }
         else {
-            return
+            //return
         }
         
         let refImage = Storage.storage().reference().child("Meat").child("\(name!).jpg")

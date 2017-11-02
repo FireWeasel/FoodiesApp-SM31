@@ -57,7 +57,7 @@ class AddOtherViewController: UIViewController,UITextFieldDelegate,UIImagePicker
             image = #imageLiteral(resourceName: "fruits-75a")
         }
         else {
-            return
+            //return
         }
         
         let refImage = Storage.storage().reference().child("Other").child("\(name!).jpg")

@@ -25,7 +25,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>"This application would like to use your current location. Do you agree?"</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>"This application would like to access your photo library. Do you agree?"</string>
+	<string>"Foodies would like to access your pictures?"</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

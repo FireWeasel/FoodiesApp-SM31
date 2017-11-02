@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                 let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                 let navController = UINavigationController(rootViewController: VC1)
                 self.present(navController, animated:true, completion: nil)
-                
+                print("Hey")
                 
             } else {
                 

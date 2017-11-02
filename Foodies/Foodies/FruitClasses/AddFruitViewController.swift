@@ -45,12 +45,12 @@ class AddFruitViewController: UIViewController, UITextFieldDelegate,UIImagePicke
     
     @IBAction func addBtn(_ sender: Any) {
         let name = nameTb!.text
-        
+        print(image)
         if image == nil {
             image = #imageLiteral(resourceName: "fruits-75a")
         }
         else {
-            return
+            //return
         }
         
         let refImage = Storage.storage().reference().child("Fruits").child("\(name!).jpg")

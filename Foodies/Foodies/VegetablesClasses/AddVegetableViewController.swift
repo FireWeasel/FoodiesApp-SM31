@@ -55,7 +55,7 @@ class AddVegetableViewController: UIViewController,UITextFieldDelegate,UIImagePi
             image = #imageLiteral(resourceName: "fruits-75a")
         }
         else {
-            return
+            //return
         }
         
         let refImage = Storage.storage().reference().child("Vegetables").child("\(name!).jpg")
